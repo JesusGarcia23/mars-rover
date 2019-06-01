@@ -237,12 +237,12 @@ function locateObject(){
     return true;
 }
 }
-// FUNCTION TO PRINT ACTUAL POSITION
+// FUNCTION TO PRINT ROVER'S ACTUAL POSITION
 function printPosition(){
   console.log("Rover is facing " + rover.direction);
   console.log("Actual Position: " + rover.y + "," + rover.x);
 }
-//FUNCTION TO PRINT OTHER ROVERS POSITION
+//FUNCTION TO PRINT MARS BOARD
 function printMarsBoard(){
   for(var i = 0; i < marsBoard.length; i++){
     for(var j = 0; j < marsBoard[i].length; j++){
@@ -250,7 +250,7 @@ function printMarsBoard(){
 }
   }
   }
-//FUNCTION TO LOCATE/MOVE OTHERS ROVERS
+//FUNCTION TO MOVE OTHERS ROVERS
 function moveOtherRovers(){
 for(var i = 0; i < marsBoard.length; i++){
   for(var j = 0; j < marsBoard[i].length; j++){
